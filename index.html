@@ -59,14 +59,20 @@ img { display: block; max-width: 100%; }
 .hero-badge { position: absolute; right: 35px; bottom: 28px; display: flex; align-items: center; padding: 0; }
 .hero-badge img { width: 116px; height: 116px; border-radius: 50%; box-shadow: 0 8px 22px rgba(0,0,0,.3); }
 
-.quick-actions { position: relative; display: grid; grid-template-columns: 1.2fr .95fr; gap: 18px; margin-top: -1px; padding-top: 30px; }
-.action-card { min-height: 270px; display: flex; gap: 22px; align-items: center; padding: 34px 38px; border-radius: 16px; box-shadow: 0 8px 20px rgba(3,20,90,.12); }
-.action-card-blue { color: var(--white); background: linear-gradient(135deg, #061b6c, #0a2c81); }.action-card-light { color: var(--ink); background: var(--white); border: 1px solid #dce1ea; }
-.action-icon-img { display: flex; align-items: center; justify-content: center; min-width: 66px; width: 66px; height: 66px; border-radius: 50%; background: var(--white); padding: 10px; box-sizing: border-border; }
-.action-icon-img img { width: 100%; height: 100%; object-fit: contain; }
-.action-card h2 { margin: 0; font-family: var(--heading); font-size: clamp(21px, 2.2vw, 29px); line-height: 1.17; }.action-card h2 strong { color: var(--red); }
-.action-card p { max-width: 370px; margin: 0 0 20px; color: inherit; opacity: .84; font-size: 14px; line-height: 1.5; }.action-card-light p { color: var(--muted); }
-.red-rule { width: 78px; height: 3px; margin: 17px 0 15px; background: var(--red); }.action-button { display: inline-flex; align-items: center; gap: 24px; padding: 12px 16px; border-radius: 6px; font-size: 14px; font-weight: 800; }.action-button span { display: grid; width: 22px; height: 22px; place-items: center; border-radius: 50%; background: white; color: var(--red); font-size: 17px; }.action-button-red { color: white; background: var(--red); }.action-button-navy { color: white; background: var(--navy); }.wip-logo { width: 145px; max-height: 100px; object-fit: contain; }
+  .quick-actions { position: relative; display: grid; grid-template-columns: 1.2fr .95fr; gap: 18px; margin-top: -1px; padding-top: 30px; }
+  .action-card { min-height: 300px; display: flex; gap: 22px; align-items: flex-start; padding: 34px 38px; border-radius: 16px; box-shadow: 0 8px 20px rgba(3,20,90,.12); }
+  .action-card-blue { color: var(--white); background: linear-gradient(135deg, #061b6c, #0a2c81); }.action-card-light { color: var(--ink); background: var(--white); border: 1px solid #dce1ea; }
+  .action-icon-img { display: flex; align-items: center; justify-content: center; min-width: 66px; width: 66px; height: 66px; border-radius: 50%; background: var(--white); padding: 10px; box-sizing: border-border; }
+  .action-icon-img img { width: 100%; height: 100%; object-fit: contain; }
+  .action-card h2 { margin: 0; font-family: var(--heading); font-size: clamp(21px, 2.2vw, 29px); line-height: 1.17; }.action-card h2 strong { color: var(--red); }
+  .action-card p { max-width: 370px; margin: 0 0 20px; color: inherit; opacity: .84; font-size: 14px; line-height: 1.5; }.action-card-light p { color: var(--muted); }
+  .action-card-blue { gap: 28px; align-items: center; }
+  .action-card-blue .action-icon-img { min-width: 96px; width: 96px; height: 96px; padding: 8px; overflow: hidden; }
+  .action-card-blue .action-icon-img img { border-radius: 50%; }
+  .action-card-blue h2 { font-size: clamp(27px, 2.7vw, 36px); line-height: 1.1; }
+  .action-card-blue p { max-width: 430px; font-size: 16px; line-height: 1.5; }
+  .action-card-blue .action-button { padding: 15px 20px; font-size: 16px; }
+  .red-rule { width: 78px; height: 3px; margin: 17px 0 15px; background: var(--red); }.action-button { display: inline-flex; align-items: center; gap: 24px; padding: 12px 16px; border-radius: 6px; font-size: 14px; font-weight: 800; border: 0; cursor: pointer; }.action-button span { display: grid; width: 22px; height: 22px; place-items: center; border-radius: 50%; background: white; color: var(--red); font-size: 17px; }.action-button-red { color: white; background: var(--red); }.action-button-navy { color: white; background: var(--navy); }.wip-logo { align-self: center; width: 145px; max-height: 100px; margin-top: 2px; object-fit: contain; }.wip-school-form { display: grid; gap: 8px; margin-top: 4px; }.wip-school-form label { color: var(--ink); font-size: 12px; font-weight: 800; }.wip-school-form select { width: 100%; min-height: 42px; padding: 0 36px 0 13px; border: 1px solid #cfd6e2; border-radius: 7px; color: var(--ink); background: #fff; font: inherit; font-size: 13px; cursor: pointer; outline: none; }.wip-school-form select:focus { border-color: var(--navy); box-shadow: 0 0 0 3px rgba(3,20,90,.11); }.wip-school-form .action-button { justify-content: space-between; width: 100%; margin-top: 4px; }
 
 .units-section { padding: 48px 0 50px; text-align: center; }.section-heading { margin-bottom: 28px; }.section-kicker { color: var(--red); }.section-heading h2 { margin: 0 0 8px; color: var(--ink); font-family: var(--heading); font-size: clamp(24px, 3vw, 32px); line-height: 1.15; }.section-heading > p:last-child { margin: 0; color: var(--muted); font-size: 15px; }
 .units-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 15px; text-align: left; }
@@ -83,7 +89,7 @@ img { display: block; max-width: 100%; }
 .site-footer { color: rgba(255,255,255,.86); background: var(--navy-deep); }.footer-top { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 42px; padding: 42px 0 34px; }.footer-brand { display: flex; align-items: center; gap: 20px; }.footer-brand img { width: 165px; }.footer-brand span { padding-left: 20px; border-left: 1px solid rgba(255,255,255,.3); font-size: 13px; }.site-footer h3 { margin: 0 0 13px; color: white; font-size: 13px; }.footer-social div { display: flex; flex-wrap: wrap; gap: 15px; }.footer-social a, .footer-contact a { color: rgba(255,255,255,.78); font-size: 12px; }.footer-contact { display: flex; flex-direction: column; gap: 7px; }.footer-bottom { padding: 14px 0 20px; border-top: 1px solid rgba(255,255,255,.13); color: rgba(255,255,255,.55); font-size: 11px; text-align: center; }
 
 @media (max-width: 1050px) { .main-nav { gap: 14px; }.nav-inner { gap: 15px; }.units-grid { grid-template-columns: repeat(3, 1fr); }.quick-actions { grid-template-columns: 1fr; } }
-@media (max-width: 760px) { .container { width: min(100% - 34px, 600px); }.nav-inner { min-height: 70px; }.brand img { width: 132px; }.state-name { display: none; }.menu-toggle { display: block; margin-left: auto; order: 3; }.header-cta { display: none; }.main-nav { position: absolute; top: 70px; right: 0; left: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 18px 15px; background: var(--navy-deep); }.menu-open .main-nav { display: flex; }.main-nav a { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.1); }.main-nav a::after { bottom: 0; }.hero-inner { grid-template-columns: 1fr; }.hero-copy { padding: 47px 8px 35px; }.hero-visual { min-height: 260px; }.hero-visual-overlay { background: linear-gradient(0deg, rgba(3,20,90,.75), transparent 50%); }.hero h1 { font-size: 49px; }.action-card { min-height: unset; padding: 27px 23px; }.action-icon-img { min-width: 52px; width: 52px; height: 52px; padding: 8px; }.wip-logo { width: 105px; }.benefits-grid { grid-template-columns: repeat(2, 1fr); gap: 23px 0; }.benefit:nth-child(2) { border: 0; }.benefit { justify-content: flex-start; padding: 0 10px; }.footer-top { grid-template-columns: 1fr; gap: 28px; padding: 32px 0; }.footer-brand { flex-wrap: wrap; } }
+  @media (max-width: 760px) { .container { width: min(100% - 34px, 600px); }.nav-inner { min-height: 70px; }.brand img { width: 132px; }.state-name { display: none; }.menu-toggle { display: block; margin-left: auto; order: 3; }.header-cta { display: none; }.main-nav { position: absolute; top: 70px; right: 0; left: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 18px 15px; background: var(--navy-deep); }.menu-open .main-nav { display: flex; }.main-nav a { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.1); }.main-nav a::after { bottom: 0; }.hero-inner { grid-template-columns: 1fr; }.hero-copy { padding: 47px 8px 35px; }.hero-visual { min-height: 260px; }.hero-visual-overlay { background: linear-gradient(0deg, rgba(3,20,90,.75), transparent 50%); }.hero h1 { font-size: 49px; }.action-card { min-height: unset; padding: 27px 23px; }.action-icon-img { min-width: 52px; width: 52px; height: 52px; padding: 8px; }.action-card-blue { gap: 18px; }.action-card-blue .action-icon-img { min-width: 82px; width: 82px; height: 82px; padding: 7px; }.action-card-blue h2 { font-size: 29px; }.action-card-blue p { font-size: 15px; }.action-card-blue .action-button { font-size: 15px; }.wip-logo { width: 105px; }.wip-school-form { max-width: 360px; }.benefits-grid { grid-template-columns: repeat(2, 1fr); gap: 23px 0; }.benefit:nth-child(2) { border: 0; }.benefit { justify-content: flex-start; padding: 0 10px; }.footer-top { grid-template-columns: 1fr; gap: 28px; padding: 32px 0; }.footer-brand { flex-wrap: wrap; } }
 @media (max-width: 470px) { .units-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }.unit-card-content { min-height: unset; padding: 14px 12px; }.unit-card h3 { font-size: 14px; }.unit-card p { font-size: 11px; margin-bottom: 8px; }.unit-arrow { width: 24px; height: 24px; font-size: 14px; }.action-card { gap: 13px; padding: 24px 17px; }.action-card h2 { font-size: 20px; }.action-card p { font-size: 12px; }.wip-logo { width: 78px; }.benefit { gap: 9px; padding: 0 4px; }.benefit-icon { font-size: 28px; }.benefit p { font-size: 10px; } }
 
   </style>
@@ -127,7 +133,7 @@ img { display: block; max-width: 100%; }
     <section class="quick-actions container" aria-label="Acessos rápidos">
       <article class="action-card action-card-blue">
         <div class="action-icon-img">
-          <img src="images/index_r1_c2.png" alt="Wizard Logo">
+          <img src="images/logowizard-ES.png" alt="Wizard Espírito Santo">
         </div>
         <div>
           <h2>Conheça nossas<br>unidades Wizard</h2>
@@ -137,12 +143,19 @@ img { display: block; max-width: 100%; }
         </div>
       </article>
       <article class="action-card action-card-light">
-        <img src="img/logodaWIP2.png" alt="Wizard International Program" class="wip-logo">
+        <img src="img/logodawip2.png" alt="Wizard International Program" class="wip-logo">
         <div>
           <h2>Compre aqui seu<br><strong>material didático WIP</strong></h2>
           <div class="red-rule"></div>
           <p>Adquira agora o material do Wizard International Program.</p>
-          <a class="action-button action-button-navy" href="compramatricula.html">Comprar material <span>→</span></a>
+          <form class="wip-school-form" action="compramatricula.html" method="get">
+            <label for="wip-school">Selecione sua escola</label>
+            <select id="wip-school" name="escola" required>
+              <option value="" disabled selected>Escolha uma escola</option>
+              <option value="Escola Fundamental">Escola Fundamental</option>
+            </select>
+            <button class="action-button action-button-navy" type="submit">Comprar material <span>→</span></button>
+          </form>
         </div>
       </article>
     </section>

@@ -1,5 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+<style>
+  .hero-landing {
+    background: #07144f !important;
+    color: #ffffff !important;
+  }
+
+  .hero-landing h1 {
+    color: #ffffff !important;
+  }
+
+  .hero-landing p {
+    color: #ffffff !important;
+  }
+
+  .hero-landing .eyebrow {
+    color: #ff5367 !important;
+  }
+header .logo img {
+  width: 180px !important;
+  height: auto !important;
+  max-width: none !important;
+}
+
+
+</style>
 
 <head>
   <meta charset="UTF-8">
@@ -12,27 +37,33 @@
     rel="stylesheet">
   <style>
     /* Landing Page Styles */
-    .hero-landing {
-      padding: 60px 20px 80px;
-      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
-      text-align: center;
-      border-bottom: 1px solid var(--line);
-    }
+.hero-landing {
+  background:
+    radial-gradient(
+      circle at 88% 18%,
+      rgba(229, 28, 53, 0.22),
+      transparent 28%
+    ),
+    linear-gradient(
+      125deg,
+      #07144f 0%,
+      #0b2777 64%,
+      #123894 100%
+    );
+}
 
-    .hero-landing h1 {
-      font-size: 36px;
-      color: var(--navy);
-      line-height: 1.25;
-      max-width: 720px;
-      margin: 16px auto;
-    }
+.hero-landing h1 {
+  color: #ffffff;
+}
 
-    .hero-landing p {
-      font-size: 18px;
-      color: var(--gray);
-      max-width: 600px;
-      margin: 0 auto 32px;
-    }
+.hero-landing p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.hero-landing .eyebrow {
+  color: #ff5367;
+}
+
 
     .cta-button {
       display: inline-block;
